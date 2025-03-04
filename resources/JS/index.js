@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }else{
                     nav.style.display = "block";
                 }
-            }else{ //Si no es el menu, mostrará los posts que contengan el span correspondiente
+            }else if(category != "readMore"){ //Si no es el menu ni el readMore, mostrará los posts que contengan el span correspondiente
                 posts.forEach(post => {
                     if (category === "allPosts") {
                         post.style.display = "block";

@@ -135,5 +135,9 @@ footer{
   
     .post1, .post2, .post3, .post4, .post5 {
       width: 90%;
+      img{
+        width: 100%;
+        height: fit-content;
+      }
     }
   }
