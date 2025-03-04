@@ -1,0 +1,274 @@
+/*** Mixin para los botones ***/
+/*** Mixin para los divs de cada post ***/
+/*** Mixin para los botones ***/
+body {
+  margin: 0;
+}
+
+/*** Header ***/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #2d2d2d;
+  color: #ededed;
+}
+header nav {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #f2f2f2;
+  width: 450px;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+header .links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .links a {
+  color: #a4a4a4;
+  text-decoration: none;
+}
+header .links button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  color: white;
+}
+
+/*** Main container ***/
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+/*** Sidebar/nav ***/
+.box1 {
+  background-color: #f2f2f2;
+  width: 200px;
+}
+.box1 a {
+  text-decoration: none;
+  color: black;
+}
+
+/*** Main container content/Posts ***/
+.box2 {
+  grid-row-start: 2;
+  grid-row-end: 6;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  grid-template-areas: "content content content" "post1 post2 post3" "post4 post5 none";
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.content {
+  grid-area: content;
+}
+.content button {
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  border: black solid 1px;
+}
+
+.post1 {
+  grid-area: post1;
+  position: relative;
+  background-color: #d8d8d8;
+  width: 300px;
+  font-size: 1em;
+  padding: 10px;
+}
+.post1 img {
+  width: 300px;
+  height: 200px;
+}
+.post1 p {
+  margin-bottom: 55px;
+}
+.post1 span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 5px;
+}
+.post1 #readMore {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  border: black solid 1px;
+}
+
+.post2 {
+  grid-area: post2;
+  position: relative;
+  background-color: #f2f2f2;
+  width: 300px;
+  font-size: 1em;
+  padding: 10px;
+}
+.post2 img {
+  width: 300px;
+  height: 200px;
+}
+.post2 p {
+  margin-bottom: 55px;
+}
+.post2 span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 5px;
+}
+.post2 #readMore {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  border: black solid 1px;
+}
+
+.post3 {
+  grid-area: post3;
+  position: relative;
+  background-color: #d8d8d8;
+  width: 300px;
+  font-size: 1em;
+  padding: 10px;
+}
+.post3 img {
+  width: 300px;
+  height: 200px;
+}
+.post3 p {
+  margin-bottom: 55px;
+}
+.post3 span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 5px;
+}
+.post3 #readMore {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  border: black solid 1px;
+}
+
+.post4 {
+  grid-area: post4;
+  position: relative;
+  background-color: #d8d8d8;
+  width: 300px;
+  font-size: 1em;
+  padding: 10px;
+}
+.post4 img {
+  width: 300px;
+  height: 200px;
+}
+.post4 p {
+  margin-bottom: 55px;
+}
+.post4 span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 5px;
+}
+.post4 #readMore {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  border: black solid 1px;
+}
+
+.post5 {
+  grid-area: post5;
+  position: relative;
+  background-color: #f2f2f2;
+  width: 300px;
+  font-size: 1em;
+  padding: 10px;
+}
+.post5 img {
+  width: 300px;
+  height: 200px;
+}
+.post5 p {
+  margin-bottom: 55px;
+}
+.post5 span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 5px;
+}
+.post5 #readMore {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  border: black solid 1px;
+}
+
+footer {
+  background-color: #2d2d2d;
+  color: #ededed;
+  padding: 10px 20px;
+}
+
+/*** Media para moviles ***/
+@media (max-width: 768px) {
+  .links button {
+    display: block;
+  }
+  .box1 {
+    display: none;
+  }
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .post1, .post2, .post3, .post4, .post5 {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */

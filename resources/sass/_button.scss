@@ -1,0 +1,7 @@
+/*** Mixin para los botones ***/
+@mixin button {
+    padding: 10px;
+    background: none;
+    border-radius: 5px;
+    border: black solid 1px;
+}

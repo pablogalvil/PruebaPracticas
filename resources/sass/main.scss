@@ -1,0 +1,139 @@
+@import "_variables.scss";
+@import "_posts.scss";
+@import "_button.scss";
+
+body{
+    margin: 0;
+}
+
+/*** Header ***/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: $black-background-color;
+    color: $white-font-color;
+    nav{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        background-color: $nav-background-color;
+        width: 450px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .links {
+        a {
+            color: $welcome-font-color;
+            text-decoration: none;
+        }
+    
+        button{
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.3em;
+            color: white;
+        }
+    }
+}
+
+
+/*** Main container ***/
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+/*** Sidebar/nav ***/
+.box1{
+    background-color: $nav-background-color;
+    width: 200px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/*** Main container content/Posts ***/
+.box2{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    grid-template-areas: 
+    "content content content"
+    "post1 post2 post3"
+    "post4 post5 none";
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.content{
+    grid-area: content;
+    button{
+        @include button;
+    }
+}
+
+.post1{
+    grid-area: post1;
+    @include div($div-background1);
+}
+.post2{
+    grid-area: post2;
+    @include div($div-background2);
+}
+.post3{
+    grid-area: post3;
+    @include div($div-background1);
+}
+.post4{
+    grid-area: post4;
+    @include div($div-background1);
+}
+.post5{
+    grid-area: post5;
+    @include div($div-background2);
+}
+
+footer{
+    background-color: $black-background-color;
+    color: $white-font-color;
+    padding: 10px 20px;
+}
+
+/*** Media para moviles ***/
+@media (max-width: 768px) {
+    .links button {
+      display: block;
+    }
+    .box1 {
+        display: none;
+    }
+  
+    .box2 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+    }
+  
+    .post1, .post2, .post3, .post4, .post5 {
+      width: 90%;
+    }
+  }
