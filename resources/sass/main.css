@@ -27,16 +27,18 @@ header nav a {
   text-decoration: none;
   color: black;
 }
-header .links {
+
+.links {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-header .links a {
+
+.links a {
   color: #a4a4a4;
   text-decoration: none;
 }
-header .links button {
+.links button {
   display: none;
   background: none;
   border: none;

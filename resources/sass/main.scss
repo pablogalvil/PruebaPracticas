@@ -28,29 +28,30 @@ header{
         }
     }
     
-    .links {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
     
-    .links {
-        a {
-            color: $welcome-font-color;
-            text-decoration: none;
-        }
-    
-        button{
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.3em;
-            color: white;
-        }
-    }
 }
 
 
+.links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.links {
+    a {
+        color: $welcome-font-color;
+        text-decoration: none;
+    }
+
+    button{
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.3em;
+        color: white;
+    }
+}
 /*** Main container ***/
 .container{
     display: flex;
